@@ -11,7 +11,7 @@ header{
 }
 #inicio {
     height: 100vh;
-    background-color: brown;
+    background-color: #7494B5
 
 }
 .imagenInicio{
@@ -34,8 +34,9 @@ header{
 .textoInicio{  
     display: flex;
     flex-flow: column;
-    padding: 1rem;
-    background-color: rgb(231, 166, 82);
+    text-align: center;
+    justify-content: space-around;
+    background-color: #E6EB54;
     position: relative;
     border-radius:20%;
     width: 23rem;
@@ -45,23 +46,155 @@ header{
     font-size: 3rem;
     font-weight: 600;
 }
+.textoInicio a{ 
+    text-decoration: none;
+    color: black;
+}
 
 #acerca{
-background-color: grey;
-padding-top: 2rem;
+background-color: white;
+padding: 2rem 1rem;
 display: flex;
 flex-direction: column;
 align-items: center;
+gap: 2rem;
+}
+#acerca h2{
+    font-size: 3rem;
+    font-weight: 600;
 }
 .textoAcerca{
     display: flex;
     gap: 1rem;
 }
-#servicios{
-background-color: aquamarine;
-
+.textoAcerca p{
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 10%;
+    padding: 2rem;
+    font-size: x-large;
 }
-#contacto{
-background-color: blue;
 
+#servicios{
+background-color: rgb(23, 23, 23);
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: x-large;
+height: 70vh;
+gap: 2rem;
+}
+#servicios h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.listaServicios{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.listaServicios div h3{
+    font-weight: 600;
+}
+
+.listaServicios div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.listaServicios div ul li{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 3px white;
+    width: 100%;
+}
+
+#reserva{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+#reserva img{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+}
+.reservaCita{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.reservaCita h2{
+    font-weight: 600;
+    font-size: xx-large;
+    text-align: center;
+}
+.reservaCita button{
+    width: 50%;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    padding: 1rem;
+}
+
+.reservaCita p{
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.reservaCita a{ 
+    text-decoration: none;
+    color: black;
+}
+
+#contacto{
+    background-color: #7494B5;
+    display: flex;
+}
+
+.imgContacto img{
+    width: 50vw;
+}
+
+.contactanos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+}
+.contactanos h2{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.contactanos form{
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    gap: 3rem;
+}
+.contactanos form input{
+    height: 3rem;
+}
+.contactanos a{ 
+    text-decoration: none;
+    color: black;
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.redes div a{
+    text-decoration: none;
+    color: black;
+}
+.copy p a{
+    text-decoration: none;
+    color: black;
 }
