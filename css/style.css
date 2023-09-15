@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display';
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#inicio {
+    height: 100vh;
+    background-color: brown;
+
+}
+.imagenInicio{
+    position: relative;
+    left: 30%;
+    height: 90vh;
+    width: auto;
+    border-radius: 5%;
+}
+.divVacio{
+    background-color: grey;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 20% 0 0 20%;
+    padding: 3rem;
+    position: relative;
+    left: 10%;
+    bottom: 24rem;
+}
+.textoInicio{  
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    background-color: rgb(231, 166, 82);
+    position: relative;
+    border-radius:20%;
+    width: 23rem;
+    height: 23rem;
+}
+.textoInicio h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#acerca{
+background-color: grey;
+padding-top: 2rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.textoAcerca{
+    display: flex;
+    gap: 1rem;
+}
+#servicios{
+background-color: aquamarine;
+
+}
+#contacto{
+background-color: blue;
+
+}
