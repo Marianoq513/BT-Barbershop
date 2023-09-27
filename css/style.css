@@ -4,32 +4,26 @@
     padding: 0;
     font-family: 'Playfair Display';
 }
+
 header{
     display: flex;
     justify-content: space-between;
     
 }
 #inicio {
-    height: 100vh;
-    background-color: #7494B5
-
-}
-.imagenInicio{
-    position: relative;
-    left: 30%;
-    height: 90vh;
-    width: auto;
-    border-radius: 5%;
+    height: 100%;
+    background-color: #7494B5;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 1rem;
+    justify-content: space-evenly;
 }
 .divVacio{
     background-color: grey;
-    width: 23rem;
-    height: 23rem;
+    width: 30%;
     border-radius: 20% 0 0 20%;
-    padding: 3rem;
-    position: relative;
-    left: 10%;
-    bottom: 24rem;
+    padding: 2rem;
+    align-self: flex-end;
 }
 .textoInicio{  
     display: flex;
@@ -37,10 +31,10 @@ header{
     text-align: center;
     justify-content: space-around;
     background-color: #E6EB54;
-    position: relative;
     border-radius:20%;
-    width: 23rem;
-    height: 23rem;
+    width: auto;
+    margin: 5% 0 0 20%;
+    padding: 1rem;
 }
 .textoInicio h2 {
     font-size: 3rem;
@@ -49,6 +43,11 @@ header{
 .textoInicio a{ 
     text-decoration: none;
     color: black;
+}
+.imagenInicio{
+    width: 50%;
+    height: auto;
+    border-radius: 5%;
 }
 
 #acerca{
@@ -82,7 +81,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 font-size: x-large;
-height: 70vh;
 gap: 2rem;
 }
 #servicios h2{
@@ -197,4 +195,46 @@ gap: 2rem;
 .copy p a{
     text-decoration: none;
     color: black;
+}
+@media (max-width:780px){
+    #inicio{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .imagenInicio{
+        width: 100%;
+    }
+    .divVacio{
+        width: 70%;
+        align-self: center;
+    }
+    .divVacio h2 {
+        font-size: large;
+    }
+    .textoAcerca{
+        display: flex;
+        flex-direction: column;
+    }
+    .listaServicios{
+        display: flex;
+        flex-direction: column;
+    }
+    #reserva{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #reserva img{
+        width: 200px;
+        height: 200px;
+    }
+    #contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .empresa{
+        display: none;
+    }
 }
